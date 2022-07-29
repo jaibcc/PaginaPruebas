@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pruebas</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <h1>Pagina web de pruebas de estudio</h1>
+  <h1>Venta de carros</h1>
+  <p>Por favor selecciones el <strong>auto</strong> de su gusto y revise las opciones que tenemos para usted</p>
+  <center><img src="imagenes/carro1.jpg" alt="esta es una foto de un carro rojo" rel="n"></center>
+  <h1>Especificaciones técnicas</h1>
+<ul>
+  <li>Torque</li>
+  <li>Cilindrada</li>
+  <li>Equipamiento</li>
+  <li>Precio</li>
+</ul>
+<hr><!--agregamos una linea para separa la sección -->
+<h2>Solicitud de credito</h2>
+<form action="/respuestas_formulario">
+  <!-- Control tipo texto -->
+  <p>Escriba sus nombres y apellidos </p><input type="text" placeholder="Nombres y apellidos" required><br>
+
+  <!--Control tipo radio -->
+  <p><strong>Por favor indique el color de su elección</strong></p>
+  <label for="rojo"><input id="rojo" type="radio" name="color">Rojo</label><br>
+  <label for="azul"><input id="azul" type="radio" name="color" checked>Azul</label><br>
+  <label for="amarillo"><input id="amarillo" type="radio" name="color">Amarillo</label><br>
+  <label for="verde"><input id="verde" type="radio" name="color">Verde</label><br>
+
+  <!-- Controles tipo check -->
+  <p><em>Por favor selecciones el equipamento deseado</em></p>
+  <label for="aire_acondicionado"><input id="aire_acondicionado" type="checkbox" name="equipo">Aire acondicionado</label><br>
+  <label for="turbo"><input id="turbo" type="checkbox" name="equipo">Turbo</label><br>
+  <label for="rines"><input id="rines" type="checkbox" name="equipo">Rines de jujo</label><br>
+  <label for="sonido"><input id="sonido" type="checkbox" name="equipo">Equipo de sonido</label><br>
+  <label for="sunroof"><input id="sunroof" type="checkbox" name="equipo" checked>Sunroof</label><br><br>
+
+  <!-- Boton para enviar los datos -->
+  <button type="submit">Enviar</button>
+</form>
+<p>Para mas información por favor visita nuestro catalogo a traves del enlace de la imagen a continuación</p>
+<a href="www.gmail.com" rel="noopener noreferrer" target="_blank"><img src="imagenes/carrolink.jpg" alt="Imagen de carro rojo"></a><br>
+<p>Para mas información visita nuestras redes sociales <a href="www.facebook.com" target="_blank" rel="noopener noreferrer">www.facebook.com</a></p>
+</body>
+</html>
