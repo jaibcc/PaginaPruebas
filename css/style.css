@@ -1,0 +1,24 @@
+/* Con asterisco aplicamos una propiedad a todo el texto de la pagina y agregamos el tipo de fuente tomada de Google*/
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
+p{
+  text-align: justify;
+  font-size: 15px;
+}
+ul{
+  text-align: center;
+}
+.listas{
+  color:rgb(185, 0, 0);
+  text-align: center;
+}
+.titulos{
+  color: rgb(28, 5, 130);
+  text-align: center;
+}
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Square Peg', cursive; */
