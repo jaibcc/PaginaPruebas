@@ -13,81 +13,93 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&family=Square+Peg&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <h1 class="titulos">Pagina web de pruebas de estudio</h1>
+<body >
+  <!-- en este titulo hacemos uso de un id para indicar un formato especifico en css -->
+  <h1 id="titulo_principal">Pagina web de pruebas de estudio</h1>
   <h1 class="titulos">Venta de carros</h1>
   <p>Por favor selecciones el <strong>auto</strong> de su gusto y revise las opciones que tenemos para usted</p>
-  <center><img src="imagenes/carro1.jpg" alt="esta es una foto de un carro rojo" rel="n"></center>
+  <center><img src="imagenes/carro1.jpg" class="imagenprincipal" alt="esta es una foto de un carro rojo" width="80%"></center>
   <h1 class="titulos">Especificaciones técnicas</h1>
-<!-- lista no ordenada -->
+  <!-- lista no ordenada -->
   <ul class="listas">
-  <li>Torque</li>
-  <li>Cilindrada</li>
-  <li>Equipamiento</li>
-  <li>Precio</li>
-</ul>
-<h1 class="titulos">Proceso de la entrega</h1>
-<!-- lista ordenada -->
-<ol class="listas">
-  <li>Revisión papeleria</li>
-  <li>Revisión de liquidos</li>
-  <li>Verificación de pagos</li>
-  <li>Acta de entrega</li>
-</ol>
+    <li>Torque</li>
+    <li>Cilindrada</li>
+    <li>Equipamiento</li>
+    <li>Precio</li>
+  </ul>
 
-<hr><!--agregamos una linea para separa la sección -->
+  <h1 id="titulo_principal">Proceso de la entrega</h1>
+  <!-- lista ordenada -->
+  <ol id="listas_procesos">
+    <li>Revisión papeleria</li>
+    <li>Revisión de liquidos</li>
+    <li>Verificación de pagos</li>
+    <li>Acta de entrega</li>
+  </ol>
 
-<div>
-<!-- Ejemplo de CSS de linea -->
-<h2 class="titulos">Solicitud de credito</h2>
-  <form action="/respuestas_formulario">
-    <!-- Control tipo texto -->
-    <p>Escriba sus nombres y apellidos </p><input type="text" placeholder="Nombres y apellidos" required><br>
+  <hr><!--agregamos una linea para separa la sección -->
 
-    <!--Control tipo radio -->
-    <h3 class="titulos">Por favor indique el color de su elección</h3>
-    <p><strong>Para mas información por favor contacte a su asesor de confianza</strong></p>
-    <label for="rojo">
-      <input id="rojo" type="radio" name="color" value="rojo">Rojo
-    </label><br>
-    <label for="azul">
-      <input id="azul" type="radio" name="color" value="azul" checked>Azul
-    </label><br>
-    <label for="amarillo">
-      <input id="amarillo" type="radio" name="color" value="amarillo">Amarillo
-    </label><br>
-    <label for="verde">
-      <input id="verde" type="radio" name="color" value="verde">Verde
-    </label><br>
+  <div class="contenedor">
+  <!-- Ejemplo de CSS de linea -->
+    <h2 class="titulos">Solicitud de credito</h2>
+      <form action="/respuestas_formulario">
+        <!-- Control tipo texto -->
+        <p>Escriba sus nombres y apellidos </p><input type="text" placeholder="Nombres y apellidos" required><br>
 
-    <!-- Controles tipo check -->
-    <p><em>Por favor selecciones el equipamento deseado</em></p>
-    <label for="aire_acondicionado">
-      <input id="aire_acondicionado" type="checkbox" name="equipo">Aire acondicionado
-    </label><br>
-    <label for="turbo">
-      <input id="turbo" type="checkbox" name="equipo" value="turbo">Turbo
-    </label><br>
-    <label for="rines">
-      <input id="rines" type="checkbox" name="equipo" value="rines de lujo">Rines de jujo
-    </label><br>
-    <label for="sonido">
-      <input id="sonido" type="checkbox" name="equipo" value="equipo de sonido">Equipo de sonido
-    </label><br>
-    <label for="sunroof">
-      <input id="sunroof" type="checkbox" name="equipo" value="sunroof" checked>Sunroof
-    </label><br><br>
+        <!--Control tipo radio -->
+        <h3 class="titulos">Por favor indique el color de su elección</h3>
+        <p><strong>Para mas información por favor contacte a su asesor de confianza</strong></p>
+        <label for="rojo">
+          <input id="rojo" type="radio" name="color" value="rojo">Rojo
+        </label><br>
+        <label for="azul">
+          <input id="azul" type="radio" name="color" value="azul" checked>Azul
+        </label><br>
+        <label for="amarillo">
+          <input id="amarillo" type="radio" name="color" value="amarillo">Amarillo
+        </label><br>
+        <label for="verde">
+          <input id="verde" type="radio" name="color" value="verde">Verde
+        </label><br>
 
-    <!-- Boton para enviar los datos -->
-    <button type="submit">Enviar</button>
-  </form>
+        <!-- Controles tipo check -->
+        <p><em>Por favor selecciones el equipamento deseado</em></p>
+        <label for="aire_acondicionado">
+          <input id="aire_acondicionado" type="checkbox" name="equipo">Aire acondicionado
+        </label><br>
+        <label for="turbo">
+          <input id="turbo" type="checkbox" name="equipo" value="turbo">Turbo
+        </label><br>
+        <label for="rines">
+          <input id="rines" type="checkbox" name="equipo" value="rines de lujo">Rines de jujo
+        </label><br>
+        <label for="sonido">
+          <input id="sonido" type="checkbox" name="equipo" value="equipo de sonido">Equipo de sonido
+        </label><br>
+        <label for="sunroof">
+          <input id="sunroof" type="checkbox" name="equipo" value="sunroof" checked>Sunroof
+        </label><br><br>
+
+        <!-- Boton para enviar los datos -->
+        <button type="submit">Enviar</button>
+      </form>
+  </div>
+  <hr>
+  <p>Para mas información por favor visita nuestro catalogo a traves del enlace de la imagen a continuación</p>
+  <a href="www.gmail.com" rel="noopener noreferrer" target="_blank"><center><img src="imagenes/carrolink.jpg" class="imagenredonda" alt="Imagen de carro rojo" width=30%></center></a><br>
+  <p>Para mas información visita nuestras redes sociales <a href="www.facebook.com" target="_blank" rel="noopener noreferrer">www.facebook.com</a></p>
+  
+  <div id="contenedor-imagenes">
+    <img src="/imagenes/carro2.jpg" alt="Imagen de un carro rojo">
+    <img src="imagenes/cell.png" alt="logo html">
+  </div>
+<br>
+<div id="contenedor-inferior">
+  <div class="rectangulo px">200px de ancho</div>
+  <div class="rectangulo vw">20vw de ancho</div>
+  <div class="rectangulo em">15em de ancho</div>
 </div>
 
-<hr>
-
-<p>Para mas información por favor visita nuestro catalogo a traves del enlace de la imagen a continuación</p>
-<a href="www.gmail.com" rel="noopener noreferrer" target="_blank"><img src="imagenes/carrolink.jpg" alt="Imagen de carro rojo"></a><br>
-<p>Para mas información visita nuestras redes sociales <a href="www.facebook.com" target="_blank" rel="noopener noreferrer">www.facebook.com</a></p>
-<footer><p><small>Todos los derechos reservados.</small></p></footer>
+  <footer><p><small>Todos los derechos reservados.</small></p></footer>
 </body>
 </html>

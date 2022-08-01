@@ -1,22 +1,107 @@
-/* Con asterisco aplicamos una propiedad a todo el texto de la pagina y agregamos el tipo de fuente tomada de Google*/
+body{
+  background-color: rgb(207, 207, 207);
+}
+
+/* textos
+Con asterisco aplicamos una propiedad a todo el texto de la pagina y agregamos el tipo de fuente tomada de Google*/
 *{
   font-family: 'Oswald', sans-serif;
 }
-
 p{
   text-align: justify;
   font-size: 15px;
 }
-ul{
-  text-align: center;
+
+/* Imagenes */
+img{
+  margin: 25px;
+  padding: 25px;
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+  background-color: darksalmon;
+  width: 30%;
 }
-.listas{
-  color:rgb(185, 0, 0);
-  text-align: center;
+.imagenredonda{
+  padding: 5px;
+  border-width: 0px;
+  background-color: aqua;
+  border-radius: 50%;
 }
+.imagenprincipal{
+  background-color: black;
+  border-width: 8px;
+  border-color: blue;
+  border-style: double solid;
+  padding: 20px 15px 10px 5px;
+}
+
+/* Titulos */
 .titulos{
   color: rgb(28, 5, 130);
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+#titulo_principal{
+  text-align: center;
+  color: rgb(157, 110, 0);
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Listas */
+#listas_procesos{
+  color: blueviolet;
+  font-size: 40px;
+}
+.listas{
+  color:rgb(185, 0, 0);
+}
+input[type="radio"]{
+  margin: 10px;
+}
+
+/* Contenedores */
+.contenedor{
+  background-color: rgb(39, 199, 21);
+}
+#contenedor-imagenes{
+  background-color: rgb(215, 32, 166);
+  border-width: 4px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+}
+#contenedor-inferior{
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  background-color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rectangulo{
+  padding: 5px;
+  margin: 5px;
+}
+/* medidas absolutas cm in px q pt */
+.px{
+  background-color: crimson;
+  width: 200px;
+}
+/* medidas relaticas vm em ex ch */
+.vw{
+  background-color: darkmagenta;
+  width: 20vw;
+}
+.em{
+  background-color: green;
+  width: 15em;
+  font-size: 1.5em;
+}
+
+/* enlaces */
+a{
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* font-family: 'Oswald', sans-serif;
